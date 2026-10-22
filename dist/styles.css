@@ -16,3 +16,70 @@
 .hero h1{font-size:clamp(48px,4.5vw,70px);line-height:1.03;letter-spacing:-.075em;max-width:700px}.glass-word{display:inline-block}
 @media(max-width:760px){.hero h1{font-size:clamp(45px,9.6vw,66px);line-height:1.04}.glass-word{display:inline}}
 @media(max-width:420px){.hero h1{font-size:43px}}
+
+/* Glass typography system */
+.hero h1{
+  color:#f7fdff;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke:.8px rgba(255,255,255,.82);
+  background:linear-gradient(180deg,#fff 4%,#f7fdff 22%,#badff1 44%,#ffffff 55%,#9bcce7 72%,#edfaff 96%);
+  background-size:100% 220%;
+  background-position:50% 10%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  filter:drop-shadow(0 2px 0 rgba(255,255,255,.18)) drop-shadow(0 15px 26px rgba(1,48,91,.28));
+  animation:glassTypeShimmer 9s ease-in-out infinite alternate;
+}
+.hero h1 .glass-word{
+  color:#e6fbff;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke:1px rgba(255,255,255,.92);
+  background:linear-gradient(180deg,#ffffff 8%,#dffaff 29%,#8ee8dd 49%,#f8ffff 58%,#79cddd 78%,#efffff 100%);
+  background-size:100% 220%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  filter:drop-shadow(0 7px 16px rgba(158,244,235,.4));
+}
+.experience h2,.how h2,.get h2,.features h2,.privacy h2,.faq h2{
+  color:#153950;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke:.55px rgba(12,49,73,.42);
+  background:linear-gradient(180deg,#0a2b46 4%,#254e61 29%,#a9cacc 47%,#f5ffff 52%,#3b7780 60%,#12394f 82%,#071f38 100%);
+  background-size:100% 210%;
+  background-position:50% 16%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  filter:drop-shadow(0 2px 0 rgba(255,255,255,.82)) drop-shadow(0 11px 16px rgba(43,90,102,.14));
+  animation:glassTypeShimmer 11s ease-in-out infinite alternate;
+}
+.experience h2 :is(em,span),.how h2 :is(em,span),.get h2 :is(em,span),.features h2 :is(em,span),.privacy h2 :is(em,span),.faq h2 :is(em,span){
+  color:#2a8c91;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke:.55px rgba(22,105,110,.42);
+  background:linear-gradient(180deg,#176879 4%,#5aa9aa 32%,#eaffff 49%,#83d6ca 58%,#267f88 79%,#125068 100%);
+  background-size:100% 210%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  filter:drop-shadow(0 8px 15px rgba(68,180,169,.2));
+}
+.truth h2{
+  color:#fff;
+  -webkit-text-fill-color:transparent;
+  -webkit-text-stroke:.75px rgba(255,255,255,.78);
+  background:linear-gradient(180deg,#fff 3%,#daf7ff 27%,#8dc8df 45%,#ffffff 54%,#96e6da 72%,#f1ffff 100%);
+  background-size:100% 215%;
+  background-position:50% 12%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  filter:drop-shadow(0 12px 22px rgba(0,35,72,.3));
+  animation:glassTypeShimmer 10s ease-in-out infinite alternate;
+}
+.truth h2 span{
+  color:#bff9ed;
+  -webkit-text-fill-color:transparent;
+  background:linear-gradient(180deg,#f4ffff,#a4eddf 43%,#ffffff 52%,#72ccb9 78%,#dffff9);
+  background-size:100% 210%;
+  -webkit-background-clip:text;
+  background-clip:text;
+}
+@keyframes glassTypeShimmer{0%{background-position:50% 5%}45%{background-position:50% 42%}100%{background-position:50% 88%}}
