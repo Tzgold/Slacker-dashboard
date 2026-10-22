@@ -83,3 +83,88 @@
   background-clip:text;
 }
 @keyframes glassTypeShimmer{0%{background-position:50% 5%}45%{background-position:50% 42%}100%{background-position:50% 88%}}
+
+/* Deep 3D refraction and extrusion */
+.hero h1{
+  -webkit-text-stroke:1.15px rgba(255,255,255,.92);
+  background:linear-gradient(172deg,#ffffff 0%,#ffffff 14%,#c5eaf8 27%,#6aa8ce 39%,#f9ffff 48%,#ffffff 53%,#8ce2dd 61%,#77aace 74%,#e8fbff 88%,#ffffff 100%);
+  background-size:100% 250%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  text-shadow:
+    1px 1px 0 rgba(197,237,255,.72),
+    2px 2px 0 rgba(132,198,229,.62),
+    3px 3px 0 rgba(76,151,196,.52),
+    4px 4px 0 rgba(33,108,164,.48),
+    5px 5px 0 rgba(11,78,135,.4),
+    -2px 0 2px rgba(141,255,239,.28),
+    2px 0 2px rgba(255,185,204,.22),
+    9px 13px 14px rgba(0,43,91,.3),
+    18px 25px 35px rgba(0,36,77,.22);
+  transition:filter .55s ease,text-shadow .55s ease;
+}
+.hero-copy:hover h1{
+  filter:drop-shadow(0 3px 0 rgba(255,255,255,.22)) drop-shadow(0 24px 30px rgba(1,48,91,.36));
+  text-shadow:1px 1px 0 rgba(210,243,255,.8),2px 2px 0 rgba(143,207,233,.7),3px 3px 0 rgba(84,163,202,.62),4px 4px 0 rgba(38,119,173,.56),5px 5px 0 rgba(13,82,139,.48),6px 6px 0 rgba(4,58,111,.36),-3px 0 3px rgba(141,255,239,.35),3px 0 3px rgba(255,185,204,.28),12px 18px 18px rgba(0,43,91,.34);
+}
+.hero h1 .glass-word{
+  -webkit-text-stroke:1.25px rgba(255,255,255,.98);
+  background:linear-gradient(170deg,#fff 2%,#dffffa 21%,#73c9cf 37%,#f9ffff 49%,#ffffff 56%,#56cbb9 68%,#74aecd 82%,#efffff 100%);
+  background-size:100% 245%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  text-shadow:
+    1px 1px 0 rgba(199,255,248,.8),
+    2px 2px 0 rgba(112,215,207,.66),
+    3px 3px 0 rgba(43,161,164,.58),
+    4px 4px 0 rgba(24,110,142,.48),
+    7px 10px 13px rgba(0,55,93,.32),
+    -2px 0 3px rgba(137,255,227,.42),
+    2px 0 3px rgba(196,224,255,.3);
+}
+.experience h2,.how h2,.get h2,.features h2,.privacy h2,.faq h2{
+  -webkit-text-stroke:.9px rgba(7,42,64,.58);
+  background:linear-gradient(172deg,#071f38 0%,#173f57 18%,#426f7c 32%,#e9ffff 47%,#ffffff 51%,#82bdc0 58%,#326673 68%,#0d344d 85%,#061d35 100%);
+  background-size:100% 245%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  text-shadow:
+    1px 1px 0 rgba(255,255,255,.9),
+    2px 2px 0 rgba(181,214,216,.78),
+    3px 3px 0 rgba(122,169,174,.66),
+    4px 4px 0 rgba(72,122,134,.58),
+    5px 5px 0 rgba(34,79,99,.48),
+    6px 6px 0 rgba(15,52,75,.38),
+    -2px 0 2px rgba(97,226,212,.2),
+    2px 0 2px rgba(255,165,149,.16),
+    10px 16px 18px rgba(25,71,87,.18);
+  transition:filter .5s ease,text-shadow .5s ease;
+}
+.experience-head:hover h2,.how-title:hover h2,.get-content:hover h2,.features-layout>div:first-child:hover h2,.privacy-inner>div:last-child:hover h2,.faq-layout>div:first-child:hover h2{
+  filter:drop-shadow(0 3px 0 rgba(255,255,255,.9)) drop-shadow(0 18px 20px rgba(43,90,102,.2));
+  text-shadow:1px 1px 0 rgba(255,255,255,.95),2px 2px 0 rgba(188,220,222,.84),3px 3px 0 rgba(128,176,180,.72),4px 4px 0 rgba(77,130,140,.64),5px 5px 0 rgba(38,86,104,.54),6px 6px 0 rgba(17,58,80,.46),7px 7px 0 rgba(8,41,63,.32),12px 18px 20px rgba(25,71,87,.22);
+}
+.experience h2 :is(em,span),.how h2 :is(em,span),.get h2 :is(em,span),.features h2 :is(em,span),.privacy h2 :is(em,span),.faq h2 :is(em,span){
+  -webkit-text-stroke:.8px rgba(17,103,107,.6);
+  background:linear-gradient(170deg,#0b596d 3%,#3c9599 27%,#ceffff 45%,#ffffff 51%,#74dccd 58%,#27868d 72%,#0d526a 100%);
+  background-size:100% 235%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  text-shadow:1px 1px 0 rgba(215,255,250,.85),2px 2px 0 rgba(101,204,194,.62),3px 3px 0 rgba(37,135,143,.52),5px 7px 10px rgba(26,99,107,.22);
+}
+.truth h2{
+  -webkit-text-stroke:1.05px rgba(255,255,255,.9);
+  background:linear-gradient(171deg,#ffffff 0%,#dff9ff 22%,#77b8d5 38%,#f8ffff 48%,#ffffff 54%,#80dfd2 65%,#7ba9ce 81%,#f3ffff 100%);
+  background-size:100% 245%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  text-shadow:1px 1px 0 rgba(215,248,255,.75),2px 2px 0 rgba(126,196,220,.62),3px 3px 0 rgba(67,139,181,.55),4px 4px 0 rgba(22,92,148,.46),6px 8px 12px rgba(0,35,72,.34),-2px 0 3px rgba(104,255,225,.3),2px 0 3px rgba(255,181,207,.18);
+  transition:filter .5s ease,text-shadow .5s ease;
+}
+.truth-copy:hover h2{filter:drop-shadow(0 18px 22px rgba(0,35,72,.38));text-shadow:1px 1px 0 rgba(225,251,255,.82),2px 2px 0 rgba(139,207,226,.72),3px 3px 0 rgba(76,151,190,.64),4px 4px 0 rgba(31,103,157,.55),5px 5px 0 rgba(10,71,129,.46),9px 13px 15px rgba(0,35,72,.36)}
+@media(max-width:760px){
+  .hero h1,.experience h2,.how h2,.get h2,.features h2,.privacy h2,.faq h2,.truth h2{
+    text-shadow:1px 1px 0 rgba(220,247,255,.72),2px 2px 0 rgba(111,177,201,.52),3px 3px 0 rgba(40,103,142,.42),6px 10px 14px rgba(7,55,91,.22);
+    transform:none;
+  }
+}
