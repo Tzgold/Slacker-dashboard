@@ -1,0 +1,11 @@
+{
+  "name": "slacker-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Slacker marketing page",
+  "type": "module",
+  "scripts": {
+    "dev": "node preview-server.mjs",
+    "start": "node preview-server.mjs"
+  }
+}
