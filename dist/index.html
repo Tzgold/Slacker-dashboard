@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1769b5">
+  <meta name="description" content="Slacker adds quiet send and seen checks to your Slack messages when both people use the Chrome extension.">
+  <title>Slacker — Know when your message lands</title>
+  <link rel="icon" href="assets/slacker-icon.png">
+  <link rel="preload" href="assets/syne-800.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="page-progress" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Slacker home"><img src="assets/slacker-icon.png" alt="" width="42" height="42"><span>slacker<span class="brand-period">.</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation"><a href="#experience">The experience</a><a href="#how-it-works">How it works</a><a href="#truth">The fine print</a></nav>
+    <a class="nav-cta" href="#get-slacker">Get Slacker <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero sky" aria-labelledby="hero-title">
+      <div class="sky-grain" aria-hidden="true"></div>
+      <div class="hero-lines" aria-hidden="true"><svg viewBox="0 0 1440 850" preserveAspectRatio="none"><path d="M-100 608C164 132 401 94 641 310S1089 580 1549 65"/><path d="M-130 735C112 496 315 506 541 594S1049 781 1525 248"/><path d="M270-100C496 156 537 185 870 66S1323 75 1530 216"/></svg></div>
+      <div class="hero-doodle doodle-left" aria-hidden="true"><svg viewBox="0 0 170 136"><path d="M26 29c45-30 124-24 119 19-3 32-58 29-76 2-16-24 7-39 35-24M43 60C9 67 6 92 23 111c13 14 35 12 51 4" stroke-dasharray="5 10"/><path d="m83 94 24-7-10 19-6-9-8-3Zm8 3-6 12"/></svg></div>
+      <div class="hero-doodle doodle-right" aria-hidden="true"><svg viewBox="0 0 170 130"><rect x="35" y="18" width="99" height="67" rx="18"/><path d="m59 52 18 17 39-38M62 85 40 111l5-30"/></svg></div>
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <div class="eyebrow light"><span class="eyebrow-spark">✳</span> THE SPACE BETWEEN SENT AND SEEN</div>
+          <h1 id="hero-title">Know when your Slack messages are <span class="glass-word">seen.</span></h1>
+          <p class="hero-lead">Slacker adds simple send and seen indicators to Slack Web, so you can tell when your message was sent and when the other person opened the conversation.</p>
+          <div class="hero-actions"><a class="button button-coral" href="#get-slacker">Add Slacker to Chrome <span aria-hidden="true">↗</span></a><a class="text-link light-link" href="#how-it-works">See how it works <span aria-hidden="true">↓</span></a></div>
+          <div class="hero-note"><span class="tiny-avatars"><span>A</span><span>B</span></span><span>Both people need Slacker for Seen status to work</span></div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Illustration of a Slacker message changing from sent to seen">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <span class="float-label label-top">a little more clarity <span>✦</span></span>
+          <div class="hero-glass">
+            <div class="demo-window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>your Slack conversation</span><span class="window-more">•••</span></div>
+            <div class="demo-person"><span class="person-avatar">M</span><span><strong>Monday plans</strong><small>Direct message</small></span><span class="person-online"></span></div>
+            <div class="demo-bubble">Hey! Still good for a quick sync at 2?</div>
+            <div class="demo-receipt"><span class="checks">✓✓</span> Seen 10:43</div>
+            <div class="demo-input">Message Monday plans <span>➤</span></div>
+          </div>
+          <div class="floating-ticket ticket-one"><span class="ticket-icon">✓</span><span>message sent<br><strong>one check</strong></span></div>
+          <div class="floating-ticket ticket-two"><span class="ticket-icon double">✓✓</span><span>conversation opened<br><strong>two checks</strong></span></div>
+          <span class="float-label label-bottom">no more guessing <span>↗</span></span>
+        </div>
+      </div>
+      <div class="hero-floor" aria-hidden="true"><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div><div class="cloud cloud-c"></div></div>
+      <a class="scroll-cue" href="#experience">SCROLL TO EXPLORE <span>↓</span></a>
+    </section>
+
+    <section class="experience section-pad" id="experience" aria-labelledby="experience-title">
+      <div class="section-kicker reveal"><span class="kicker-index">01 / THE FEELING</span><span class="kicker-line"></span><span>TRY IT YOURSELF</span></div>
+      <div class="experience-head reveal"><h2 id="experience-title">From <em>“sent”</em> to <span>“seen.”</span><br>Feel the difference.</h2><p>Here’s a tiny preview of the moment Slacker adds to your chats. Send a note, then open it on the other side.</p></div>
+      <div class="interactive-stage reveal" id="interactive-stage">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <div class="stage-topline"><span><span class="live-dot"></span> INTERACTIVE PREVIEW</span><button type="button" id="reset-demo" class="reset-button" aria-label="Reset demo">↺ <span>Start over</span></button></div>
+        <div class="stage-inner">
+          <div class="chat-side sender-side"><div class="stage-person"><span class="stage-avatar avatar-you">Y</span><span><strong>You</strong><small>In Slack</small></span></div><div class="mini-chat"><div class="mini-chat-header"><span>To: Alex</span><span>•••</span></div><div class="mini-message">Hey Alex, did you get a chance to look at the idea? <span>✳</span></div><div class="receipt-state" id="receipt-state"><span class="state-check" id="state-check">·</span><span id="state-text">Ready to send</span></div></div><button type="button" id="send-button" class="stage-button">Send the message <span>↗</span></button></div>
+          <div class="signal-space" aria-hidden="true"><svg viewBox="0 0 360 170" preserveAspectRatio="none"><path class="signal-track" d="M8 86 C86 3 137 145 214 77 S311 29 352 84"/><path class="signal-flow" id="signal-flow" d="M8 86 C86 3 137 145 214 77 S311 29 352 84"/></svg><div class="flying-message" id="flying-message">✉</div><span class="signal-caption" id="signal-caption">A tiny signal, across the conversation.</span></div>
+          <div class="chat-side receiver-side"><div class="stage-person"><span class="stage-avatar avatar-alex">A</span><span><strong>Alex</strong><small>Also has Slacker</small></span></div><div class="receiver-screen" id="receiver-screen"><div class="screen-header"><span>Alex’s Slack</span><span class="screen-dot"></span></div><div class="screen-empty" id="screen-empty"><span>✦</span><p>The message is on its way.</p></div><div class="screen-message" id="screen-message">Hey Alex, did you get a chance to look at the idea?</div></div><button type="button" id="open-button" class="stage-button stage-button-outline" disabled>Open the conversation <span>↗</span></button></div>
+        </div>
+        <p class="stage-footnote" id="demo-announcement" aria-live="polite">Press “Send the message” to begin.</p>
+      </div>
+    </section>
+
+    <section class="how section-pad" id="how-it-works" aria-labelledby="how-title">
+      <div class="section-kicker reveal"><span class="kicker-index">02 / THE MECHANICS</span><span class="kicker-line"></span><span>SMALL CHECKS, BIG RELIEF</span></div>
+      <div class="how-grid"><div class="how-title reveal"><h2 id="how-title">The simplest part of your day, <em>made clearer.</em></h2><p>Slacker is a lightweight Chrome extension. No new inbox. No new way to work. Just useful signals inside Slack Web.</p><div class="doodle-checks" aria-hidden="true">✓<span>✓</span></div></div><div class="steps">
+        <div class="step reveal"><span class="step-num">01</span><div><h3>Install Slacker</h3><p>Add the Chrome extension and open Slack Web. It works quietly in the background.</p></div><span class="step-symbol">↘</span></div>
+        <div class="step reveal"><span class="step-num">02</span><div><h3>Send your message</h3><p>A single check appears when your message is sent and tracked.</p></div><span class="step-symbol">↗</span></div>
+        <div class="step reveal"><span class="step-num">03</span><div><h3>See when it’s opened</h3><p>When another Slacker user opens the conversation, your indicator turns to two teal checks. Hover to see the time.</p></div><span class="step-symbol teal-symbol">✓✓</span></div>
+      </div></div>
+    </section>
+
+    <section class="truth section-pad" id="truth" aria-labelledby="truth-title"><div class="truth-texture" aria-hidden="true"></div><div class="truth-inner"><div class="section-kicker light reveal"><span class="kicker-index">03 / THE HONEST PART</span><span class="kicker-line"></span><span>THE TWO-PERSON RULE</span></div><div class="truth-layout"><div class="truth-copy reveal"><h2 id="truth-title">A clearer signal.<br><span>On both sides.</span></h2><p>Seen works when <strong>both people have Slacker</strong>. It means the other person opened the conversation with your message in view. It isn’t an official Slack read receipt or a promise that they’ve replied.</p><a href="#get-slacker" class="button button-white">Bring a teammate <span aria-hidden="true">↗</span></a></div><div class="truth-art reveal" aria-hidden="true"><div class="truth-ring ring-a"></div><div class="truth-ring ring-b"></div><div class="truth-avatar avatar-one">you <span>✓</span></div><div class="truth-avatar avatar-two">them <span>✓</span></div><div class="truth-connection"><span></span><i>✓✓</i><span></span></div><div class="truth-glass-text">better when<br>we’re both here<span>✳</span></div></div></div></div></section>
+
+    <section class="features section-pad" aria-labelledby="features-title"><div class="section-kicker reveal"><span class="kicker-index">04 / THE DETAILS</span><span class="kicker-line"></span><span>LIGHT BY DESIGN</span></div><div class="features-layout"><div class="reveal"><h2 id="features-title">Everything you need.<br><span>Nothing in the way.</span></h2><p>Slacker stays focused on one job: giving your messages a little more context.</p></div><div class="feature-list reveal"><div><span>✓</span><strong>Send and seen indicators</strong><small>Simple, familiar checks in Slack Web.</small></div><div><span>◌</span><strong>Quiet by default</strong><small>Lightweight extension with an enable or disable control.</small></div><div><span>⌂</span><strong>Your history stays local</strong><small>Receipt history and settings remain in your browser.</small></div><div><span>✳</span><strong>No extra login</strong><small>No separate account, Slack password, or API token required.</small></div></div></div></section>
+
+    <section class="privacy section-pad" aria-labelledby="privacy-title"><div class="privacy-inner"><div class="privacy-mark reveal" aria-hidden="true"><span>✳</span><i></i><i></i></div><div class="reveal"><span class="small-kicker">05 / PRIVACY, SIMPLY</span><h2 id="privacy-title">The receipt matters.<br><em>Your message stays yours.</em></h2><p>Slacker uses temporary Slack message identifiers and seen timestamps to provide receipts. Full message content is not uploaded to the Slacker server. Local settings and receipt history remain in your browser.</p><a class="privacy-link" href="https://slacker.tzgold.workers.dev/privacy" target="_blank" rel="noopener noreferrer">Read our Privacy Policy <span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="faq section-pad" aria-labelledby="faq-title"><div class="section-kicker reveal"><span class="kicker-index">06 / GOOD TO KNOW</span><span class="kicker-line"></span><span>FREQUENTLY ASKED</span></div><div class="faq-layout"><div class="reveal"><h2 id="faq-title">Questions? <span>Fair.</span></h2><p>Clarity should come with clear answers.</p></div><div class="faq-items reveal"><details><summary>Does Slacker work with everyone on Slack?</summary><p>Seen status works when both people have Slacker installed and are using Slack Web in Chrome.</p></details><details><summary>Does Slacker read my messages?</summary><p>Slacker detects message activity in Slack Web to display receipts, but full message text is not uploaded to the Slacker server.</p></details><details><summary>Do I need to create an account?</summary><p>No. Slacker does not require a separate account.</p></details><details><summary>Can I turn it off?</summary><p>Yes. You can disable Slacker from the extension popup at any time.</p></details><details><summary>Is Slacker free?</summary><p>Yes, Slacker is currently free to use.</p></details></div></div></section>
+
+    <section class="get section-pad" id="get-slacker" aria-labelledby="get-title"><div class="get-orbit" aria-hidden="true"></div><div class="get-content reveal"><span class="get-star">✳</span><div class="section-kicker centered"><span>07 / YOUR TURN</span></div><h2 id="get-title">Stop wondering whether your message was <em>seen.</em></h2><p>Try the current Chrome extension preview with a teammate. Both of you need Slacker for seen checks to appear.</p><a class="button button-dark" href="assets/slacker-preview-v1.3.7.zip" download>Download Slacker for Chrome <span aria-hidden="true">↓</span></a><button type="button" class="install-toggle" id="install-toggle" aria-expanded="false" aria-controls="install-steps">How do I install it? <span>+</span></button><div class="install-steps" id="install-steps" hidden><ol><li>Download and unzip the preview build.</li><li>Open <strong>chrome://extensions</strong> and turn on Developer mode.</li><li>Choose <strong>Load unpacked</strong> and select the unzipped folder.</li><li>Ask a teammate to do the same, then open Slack in Chrome.</li></ol><p>Preview build · Chrome desktop · Slacker v1.3.7</p></div></div></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#top"><img src="assets/slacker-icon.png" alt="" width="38" height="38"><span>slacker<span class="brand-period">.</span></span></a><p>For the moments between sent and seen.</p><div><a href="#how-it-works">How it works</a><a href="#truth">The two-person rule</a><a href="https://slacker.tzgold.workers.dev/privacy" target="_blank" rel="noopener noreferrer">Privacy</a></div><small>Slacker is an independent third-party extension and is not affiliated with, endorsed by, or sponsored by Slack Technologies.</small></footer>
+</body>
+</html>
